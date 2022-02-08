@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 4 - Reservas en un Hotel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+    <h1>Reservas en un Hotel</h1>
+    
+    <div class="form-group">
+    <label for="room">Tipo de habitación</label>
+    <select class="form-control" id="room">
+      <option>Standard</option>
+      <option>Junior Suite</option>
+      <option>Suite</option>
+    </select>
+    </div>
+
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="spa">
+        <label class="form-check-label" for="spa">Voy a usarar el SPA</label>
+    </div>
+
+    <div class="form-group">
+    <label for="type">Ocupación de la habitación</label>
+    <select class="form-control" id="type">
+        <option>Normal</option>
+        <option>Doble</option>
+        <option>Triple</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+        <label for="nights">Número de noches</label>
+        <input type="number" class="form-control" id="nights" value="1">
+    </div>
+
+    <div class="form-group">
+        <label for="parking">Número de noches de parking</label>
+        <input type="number" class="form-control" id="parking">
+    </div>
+
+    <button id="calculate" type="submit" class="btn btn-primary">Calcular</button>
+
+
+    <script src="js/datos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
